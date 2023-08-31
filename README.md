@@ -72,6 +72,7 @@ The API is secured using JWT authentication. You must include a valid JWT token 
 
 # API Link:
 https://localhost:7185/swagger/index.html
+and it works while the code is running on Visual Studio 2022
 
 ## Contact
 
