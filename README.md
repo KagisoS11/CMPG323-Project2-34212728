@@ -70,6 +70,9 @@ The API is secured using JWT authentication. You must include a valid JWT token 
 3. Configure the connection string in `appsettings.json` to connect to your database.
 4. Run the application using `dotnet run`.
 
+# API Link:
+https://localhost:7185/swagger/index.html
+
 ## Contact
 
 For any questions or inquiries, please contact [Kagiso Setshwane] at [34212728@mynwu.ac.za].
