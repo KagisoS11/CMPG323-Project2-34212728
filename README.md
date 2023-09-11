@@ -70,6 +70,9 @@ The API is secured using JWT authentication. You must include a valid JWT token 
 3. Configure the connection string in `appsettings.json` to connect to your database.
 4. Run the application using `dotnet run`.
 
+# Azure Link:
+https://portal.azure.com/#@nwuac.onmicrosoft.com/resource/subscriptions/dedd55cf-6843-4801-ad00-90a6ba942168/resourceGroups/Ap1-project2/overview
+
 # API Link:
 https://localhost:7185/swagger/index.html
 and it works while the code is running on Visual Studio 2022
