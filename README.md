@@ -75,7 +75,7 @@ https://portal.azure.com/#@nwuac.onmicrosoft.com/resource/subscriptions/dedd55cf
 
 # API Link:
 https://localhost:7185/swagger/index.html
-and it works while the code is running on Visual Studio 2022
+and it works while the code is running on Visual Studio 2022 and the file you will find it on the master BRANCH where it has code to the methods
 
 ## Contact
 
