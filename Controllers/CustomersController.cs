@@ -150,39 +150,7 @@ namespace EcoPowerLogistics_Project2_API.Controllers
         {
             return (_context.Customers?.Any(e => e.CustomerID == id)).GetValueOrDefault();
         }
-        [HttpPatch("{id}")]
-        public async Task<IActionResult> UpdateCustomers(int id, Customers customer)
-        {
-            if (id != customer.CustomerID)
-            {
-                return BadRequest();
-            }
-
-            if (!CustomersExists(id))
-            {
-                return NotFound();
-            }
-
-            _context.Entry(customer).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!CustomersExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
+        
 
     }
 }
