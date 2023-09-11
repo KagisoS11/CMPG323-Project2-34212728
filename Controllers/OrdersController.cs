@@ -151,40 +151,6 @@ namespace EcoPowerLogistics_Project2_API.Controllers
             return NoContent();
         }
 
-        [HttpPatch("{id}")]
-        public async Task<IActionResult> UpdateOrders(int id, Orders order)
-        {
-            if (id != order.OrderID)
-            {
-                return BadRequest();
-            }
-
-            if (!OrdersExists(id))
-            {
-                return NotFound();
-            }
-
-            _context.Entry(order).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!OrdersExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
-
 
         private bool OrdersExists(int id)
         {
